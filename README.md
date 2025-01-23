@@ -1,8 +1,8 @@
-# React + Vite
+# React Priority Todo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application for managing a to-do list with priorities. Tasks can be added, edited, and deleted, with visual cues for priority levels.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Add tasks with a title and priority (low, medium, high).
+- Edit or delete existing tasks.
+- Color-coded priorities for easy distinction.
