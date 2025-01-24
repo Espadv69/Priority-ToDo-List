@@ -26,8 +26,20 @@ body {
 
   color: #2d3a5b;
   background: #ffffff;
+
+  min-height: 100dvh;
 }
 
 button {
   cursor: pointer;
+}
+
+.h1-title {
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+
+  text-align: center;
+
+  border-bottom: 3px solid royalblue;
 }
