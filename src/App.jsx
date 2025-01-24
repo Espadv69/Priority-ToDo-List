@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import TodoForm from './components/TodoForm'
+import TodoList from './components/TodoList'
 
 const App = () => {
   const [tasks, setTasks] = useState([])
@@ -12,7 +13,7 @@ const App = () => {
     <main>
       <h1>Todo List with Priority</h1>
       <TodoForm onAddTask={handleAddTask} />
-      {/* Todo: Show tasksList */}
+      <TodoList tasks={tasks} />
     </main>
   )
 }
