@@ -5,10 +5,6 @@ const TodoItem = ({ task, onDeleteTask }) => {
     high: '#ffe6e6',
   }
 
-  const handleDeleteTask = () => {
-    onDeleteTask(task)
-  }
-
   return (
     <li
       className="li-todoItem"
@@ -16,7 +12,7 @@ const TodoItem = ({ task, onDeleteTask }) => {
     >
       <span>{task.task}</span>
       <span>{task.priority.toUpperCase()}</span>
-      <button type="button" onClick={handleDeleteTask}>
+      <button type="button" onClick={onDeleteTask}>
         Delete
       </button>
     </li>
