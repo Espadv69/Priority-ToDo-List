@@ -16,7 +16,7 @@ const TodoItem = ({ task, onDeleteTask }) => {
       <span className="priority-todoItem">
         Priority: {task.priority.toUpperCase()}
       </span>
-      <button className='button-todoItem' type="button" onClick={onDeleteTask}>
+      <button className="button-todoItem" type="button" onClick={onDeleteTask}>
         Delete
       </button>
     </li>
