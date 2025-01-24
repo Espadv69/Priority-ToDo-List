@@ -16,7 +16,7 @@ const App = () => {
   }
   return (
     <main>
-      <h1>Todo List with Priority</h1>
+      <h1 className="h1-title">Todo List with Priority</h1>
       <TodoForm onAddTask={handleAddTask} />
       <TodoList tasks={tasks} onDeleteTask={handleDeleteTask} />
     </main>
