@@ -32,8 +32,18 @@
 
   padding: .5rem 1rem;
 
-  border: 1px solid royalblue;
+  border: 1px solid whitesmoke;
   border-radius: 5px;
+
+  color: #ffffff;
+  background: #2d3a5b;
+}
+
+.input-todoForm:focus,
+.select-todoForm:focus,
+.button-todoForm:focus {
+  outline: none;
+  border: 1px solid whitesmoke;
 }
 
 .select-todoForm {
