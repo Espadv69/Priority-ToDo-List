@@ -11,7 +11,7 @@ const App = () => {
   }
 
   const handleDeleteTask = (index) => {
-    const filteredTasks = tasks.filter((task) => task.index !== index)
+    const filteredTasks = tasks.filter((_, i) => i !== index)
     setTasks(filteredTasks)
   }
   return (
