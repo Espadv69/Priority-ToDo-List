@@ -1,3 +1,5 @@
+import '../css/TodoItem.css'
+
 const TodoItem = ({ task, onDeleteTask }) => {
   const priorityColors = {
     low: '#edf7ed',
@@ -10,9 +12,11 @@ const TodoItem = ({ task, onDeleteTask }) => {
       className="li-todoItem"
       style={{ backgroundColor: priorityColors[task.priority] }}
     >
-      <span>{task.task}</span>
-      <span>{task.priority.toUpperCase()}</span>
-      <button type="button" onClick={onDeleteTask}>
+      <span className="task-todoItem">{task.task}</span>
+      <span className="priority-todoItem">
+        Priority: {task.priority.toUpperCase()}
+      </span>
+      <button className='button-todoItem' type="button" onClick={onDeleteTask}>
         Delete
       </button>
     </li>
