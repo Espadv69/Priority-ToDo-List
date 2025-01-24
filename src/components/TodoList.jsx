@@ -1,12 +1,10 @@
 import TodoItem from './TodoItem'
 
+import '../css/TodoList.css'
+
 const TodoList = ({ tasks, onDeleteTask }) => {
   if (tasks.length === 0) {
     return <p className="p-todoList">No tasks added yet!</p>
-  }
-
-  const deleteTask = (index) => {
-    const filteredTasks = tasks.filter((task) => task.index !== index)
   }
 
   return (
