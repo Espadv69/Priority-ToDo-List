@@ -35,7 +35,7 @@ const TodoForm = ({ onAddTask }) => {
           value={task}
           onChange={handleTask}
           className="input-todoForm"
-          placeholder='Write a task...'
+          placeholder="Write a task..."
           required
         />
       </label>
