@@ -4,6 +4,16 @@ const TodoForm = ({ onAddTask }) => {
   const [task, setTask] = useState('')
   const [priority, setPriority] = useState('low')
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    if (!task.trim()) return
+
+    onAddTask({ task, priority })
+    setTask('')
+    setPriority('low')
+  }
+
   return (
     <form>
       <label>
