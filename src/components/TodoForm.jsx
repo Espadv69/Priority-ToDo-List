@@ -14,16 +14,26 @@ const TodoForm = ({ onAddTask }) => {
     setPriority('low')
   }
 
+  const handleTask = (e) => {
+    const value = e.target.value
+    setTask(value)
+  }
+
+  const handlePriority = (e) => {
+    const value = e.target.value
+    setPriority(value)
+  }
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <label>
         Task:
-        <input type="text" value={task} />
+        <input type="text" value={task} onChange={handleTask} />
       </label>
 
       <label>
         Priority:
-        <select value={priority}>
+        <select value={priority} onChange={handlePriority}>
           <option value="low">Low</option>
           <option value="medium">Medium</option>
           <option value="high">High</option>
