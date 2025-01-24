@@ -8,12 +8,16 @@ const TodoForm = ({ onAddTask }) => {
     <form>
       <label>
         Task:
-        <input type="text" />
+        <input type="text" value={task} />
       </label>
 
       <label>
         Priority:
-        <input type="text" />
+        <select value={priority}>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
       </label>
 
       <button>Add Task</button>
