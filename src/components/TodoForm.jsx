@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import '../css/TodoForm.css'
+
 const TodoForm = ({ onAddTask }) => {
   const [task, setTask] = useState('')
   const [priority, setPriority] = useState('low')
@@ -25,22 +27,31 @@ const TodoForm = ({ onAddTask }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="todoForm">
       <label>
         Task:
-        <input type="text" value={task} onChange={handleTask} />
+        <input
+          type="text"
+          value={task}
+          onChange={handleTask}
+          className="input-todoForm"
+        />
       </label>
 
       <label>
         Priority:
-        <select value={priority} onChange={handlePriority}>
+        <select
+          value={priority}
+          onChange={handlePriority}
+          className="select-todoForm"
+        >
           <option value="low">Low</option>
           <option value="medium">Medium</option>
           <option value="high">High</option>
         </select>
       </label>
 
-      <button>Add Task</button>
+      <button className="button-todoForm">Add Task</button>
     </form>
   )
 }
