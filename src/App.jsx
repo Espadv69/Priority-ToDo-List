@@ -9,11 +9,16 @@ const App = () => {
   const handleAddTask = (newTask) => {
     setTasks((prevTask) => [...prevTask, newTask])
   }
+
+  const handleDeleteTask = (index) => {
+    const filteredTasks = tasks.filter((task) => task.index !== index)
+    setTasks(filteredTasks)
+  }
   return (
     <main>
       <h1>Todo List with Priority</h1>
       <TodoForm onAddTask={handleAddTask} />
-      <TodoList tasks={tasks} />
+      <TodoList tasks={tasks} onDeleteTask={handleDeleteTask} />
     </main>
   )
 }
