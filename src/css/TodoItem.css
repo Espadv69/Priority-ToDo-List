@@ -1,10 +1,12 @@
 .li-todoItem {
-  padding: 1rem .3rem;
+  padding: 1rem 0.5rem;
   width: 100%;
 
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
+
+  border-radius: 10px;
 }
 
 .task-todoItem {
@@ -21,7 +23,7 @@
 }
 
 .button-todoItem {
-  padding: .6rem;
+  padding: 0.6rem;
 
   width: 30%;
 
