@@ -1,0 +1,14 @@
+.ul-todoList {
+  margin: auto;
+
+  width: 100%;
+  max-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.p-todoList {
+  text-align: center;
+}
