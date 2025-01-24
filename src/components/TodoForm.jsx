@@ -44,3 +44,5 @@ const TodoForm = ({ onAddTask }) => {
     </form>
   )
 }
+
+export default TodoForm
